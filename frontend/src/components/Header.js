@@ -28,34 +28,34 @@ function Header() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto navbarLinks">
-              <LinkContainer to="/cart">
+              <LinkContainer to="/">
                 <Nav.Link>
                 <i className="fa-solid fa-laptop"></i>Introduction
                 </Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/cart">
+              <LinkContainer to="/getting_started">
                 <Nav.Link>
                 <i className="fa-solid fa-book"></i>Getting Started
                 </Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/cart">
+              <LinkContainer to="/gitflow">
                 <Nav.Link>
                 <i className="fa-solid fa-code-compare"></i>Gitflow
                 </Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/cart">
+              <LinkContainer to="/stack">
                 <Nav.Link>
                 <i className="fa-regular fa-file-code"></i>Stack
                 </Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/cart">
+              <LinkContainer to="/techniques">
                 <Nav.Link>
-                  <i className="fas fa-shopping-cart"></i>Techniques
+                <i class="fa-brands fa-connectdevelop"></i>Techniques
                 </Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/cart">
+              <LinkContainer to="/posts">
                 <Nav.Link>
-                  <i className="fas fa-shopping-cart"></i>Post
+                <i class="fa-solid fa-file"></i>Posts
                 </Nav.Link>
               </LinkContainer>
 
