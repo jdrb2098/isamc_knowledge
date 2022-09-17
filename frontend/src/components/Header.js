@@ -50,12 +50,12 @@ function Header() {
               </LinkContainer>
               <LinkContainer to="/techniques">
                 <Nav.Link>
-                <i class="fa-brands fa-connectdevelop"></i>Techniques
+                <i className="fa-brands fa-connectdevelop"></i>Techniques
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/posts">
                 <Nav.Link>
-                <i class="fa-solid fa-file"></i>Posts
+                <i className="fa-solid fa-file"></i>Posts
                 </Nav.Link>
               </LinkContainer>
 

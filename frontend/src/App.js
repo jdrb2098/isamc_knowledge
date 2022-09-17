@@ -1,3 +1,4 @@
+import { Container } from "react-bootstrap";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import GetingStartedScreen from "./screens/GetingStartedScreen";
@@ -13,7 +14,9 @@ function App() {
   return (
     <>
     <Header/>
+    <Container>
     <Routes>
+      
       <Route path="/" element={<HomeScreen />} />
       <Route path="techniques" element={<TechniquesScreen/>} />
       <Route path="stack" element={<StackScreen/>} />
@@ -24,6 +27,7 @@ function App() {
       <Route path="login" element={<LoginScreen/>} />
 
     </Routes>
+    </Container>
     </>
   );
 }

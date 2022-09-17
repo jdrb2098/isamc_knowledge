@@ -17,3 +17,8 @@ code {
     justify-content: space-around;
     align-items: flex-start;
 }
+.flex{
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
