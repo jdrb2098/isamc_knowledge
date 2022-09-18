@@ -30,32 +30,32 @@ function Header() {
             <Nav className="ml-auto navbarLinks">
               <LinkContainer to="/">
                 <Nav.Link>
-                <i className="fa-solid fa-laptop"></i>Introduction
+                <span className="fa-xl">💻</span>Introduction
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/getting_started">
                 <Nav.Link>
-                <i className="fa-solid fa-book"></i>Getting Started
+                <span className="fa-xl">📚</span>Getting Started
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/gitflow">
                 <Nav.Link>
-                <i className="fa-solid fa-code-compare"></i>Gitflow
+                <span className="fa-xl">🗂️</span>Gitflow
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/stack">
                 <Nav.Link>
-                <i className="fa-regular fa-file-code"></i>Stack
+                <span className="fa-xl">🗄️</span>Stack
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/techniques">
                 <Nav.Link>
-                <i className="fa-brands fa-connectdevelop"></i>Techniques
+                <span className="fa-xl">🧩</span>Techniques
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/posts">
                 <Nav.Link>
-                <i className="fa-solid fa-file"></i>Posts
+                <span className="fa-xl">📰</span>Posts
                 </Nav.Link>
               </LinkContainer>
 
@@ -68,7 +68,7 @@ function Header() {
               ) : (
                 <LinkContainer to="/login">
                   <Nav.Link>
-                    <i className="fas fa-user"></i>Login
+                  <span className="fa-xl">👤</span>Login
                   </Nav.Link>
                 </LinkContainer>
               )}
@@ -76,6 +76,7 @@ function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <hr style={{padding: 0, margin: 0}} />
     </header>
   );
 }

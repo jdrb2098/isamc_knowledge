@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { login } from "../actions/userActions";
-import Logo from '../assets/LogoISAMC.jfif'
+import Logo from "../assets/LogoISAMC.jfif";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
 
@@ -11,16 +11,15 @@ function LoginScreen() {
   const [password, setPassword] = useState("");
 
   const dispatch = useDispatch();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const userLogin = useSelector((state) => state.userLogin);
   const { error, loading, userInfo } = userLogin;
 
   useEffect(() => {
-    if(userInfo){
-      navigate("/")
+    if (userInfo) {
+      navigate("/");
     }
-  }, [userInfo, navigate])
-  
+  }, [userInfo, navigate]);
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -28,7 +27,7 @@ function LoginScreen() {
   };
 
   return (
-    <div className="page-header align-items-start min-vh-100">
+    <div className="page-header align-items-start max-vh-100 my-5">
       <span className="mask bg-gradient-dark opacity-6"></span>
       <div className="container my-auto">
         <div className="row">
@@ -76,11 +75,8 @@ function LoginScreen() {
           </div>
         </div>
       </div>
-      
     </div>
   );
 }
 
 export default LoginScreen;
-
-

@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import GetingStartedScreen from "./screens/GetingStartedScreen";
 import GitflowScreen from "./screens/GitflowScreen";
@@ -28,6 +29,7 @@ function App() {
 
     </Routes>
     </Container>
+    <Footer />
     </>
   );
 }
