@@ -4,7 +4,7 @@ import vsCode from "../assets/vs-code.png";
 
 function GetingStartedScreen() {
   return (
-    <div className="px-5 pt-3" style={{ flex: 1, minHeight: "100vh" }}>
+    <div className="px-5 pt-4" style={{ flex: 1, minHeight: "100vh" }}>
       <div className="flex">
         <h2 style={{ marginBottom: "0" }}>Getting Started</h2>
         <span className="fa-xl mx-3">📚</span>
