@@ -16,7 +16,7 @@ class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField()
     tags = models.ManyToManyField('Tag', blank=True)
-    _id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
+    _id = models.AutoField(primary_key=True, editable=False)
 
     def __str__(self):
         return self.title
@@ -29,8 +29,7 @@ class Review(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     body = models.TextField(null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
-    _id = models.UUIDField(default=uuid.uuid4, unique=True,
-                          primary_key=True, editable=False)
+    _id = models.AutoField(primary_key=True, editable=False)
 
     class Meta:
         unique_together = [['owner', 'post']]
