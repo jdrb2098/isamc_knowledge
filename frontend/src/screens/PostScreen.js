@@ -2,7 +2,7 @@ import React from 'react'
 
 function PostScreen() {
   return (
-    <div>PostScreen</div>
+    <div className="px-5 pt-4" style={{ flex: 1, minHeight: "100vh" }}>PostScreen</div>
   )
 }
 

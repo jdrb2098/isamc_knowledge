@@ -4,21 +4,36 @@ import Terminal from "../components/Terminal";
 
 function HomeScreen() {
   return (
-    <div>
+    <div className="px-5 pt-4" style={{ flex: 1, minHeight: "100vh" }}>
       <div className="flex">
         <h2 style={{ marginBottom: "0" }}>introduction</h2>
         <span className="fa-xl mx-3">💻</span>
       </div>
       <hr className="hr-m" />
 
-      <Container className="">
-        <div className="flex mx-5">
+      <p className="text-justify">
+        <b>ISAMC S.A.S.</b> is a company that offers services of formulation,
+        development and implementation of science, technology, innovation and
+        engineering projects that provides support and supervision of projects
+        through consultancy, advice, accompaniment and training,also includes
+        the commercial representation of foreign companies in the national
+        territory.
+      </p>
+      <p className="text-justify">
+        is a company that also develops projects of information and
+        communication technologies (ICT) and technological research and
+        development. Among its activities is the development of the following
+        consulting and engineering activities on its own account or on behalf of
+        others, or associated with third parties under any lawful associative
+      </p>
+      <div className="">
+        <div className="flex ">
           <i className="fa-solid fa- fa-link mr-3"></i>
           <h2 className="mx-3" style={{ marginBottom: "0" }}>
             Links
           </h2>
         </div>
-        <hr className="hr-m mx-5" />
+        <hr className="hr-m " />
 
         <div className="mx-5">
           <div>
@@ -50,14 +65,14 @@ function HomeScreen() {
           </div>
         </div>
 
-        <div className="flex mx-5 mt-5">
+        <div className="flex  mt-5">
           <i className="fa-solid fa-code mr-3"></i>
           <h2 className="mx-3" style={{ marginBottom: "0" }}>
             Principles
           </h2>
         </div>
 
-        <hr className="hr-m mx-5 " />
+        <hr className="hr-m" />
         <div className="mx-5">
           <h3>1. Don't Repeat Yourself</h3>
           <p>
@@ -117,7 +132,7 @@ function HomeScreen() {
         </div>
 
         <Terminal />
-      </Container>
+      </div>
     </div>
   );
 }
