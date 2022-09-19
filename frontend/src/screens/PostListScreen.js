@@ -4,8 +4,8 @@ function PostListScreen() {
   return (
     <div>
       <div className="flex">
-        <i className="fa-solid fa-file fa-xl mr-3"></i>
-        <h2 className="mx-3" style={{marginBottom:"0"}}>Posts</h2>
+        <h2 style={{marginBottom:"0"}}>Posts</h2>
+        <span className="fa-xl mx-3">📰</span>
       </div>
       <hr className="hr-m"/>
     </div>
