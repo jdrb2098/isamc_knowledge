@@ -16,7 +16,7 @@ const Footer = () => {
             </li>
           </ul>
           <div>
-            <i class="fa-brands fa-github me-2" />
+            <i className="fa-brands fa-github me-2" />
             <a href="https://github.com/">Isamc</a>
           </div>
           <span>Useful Knowledge Base for Isamc Developers</span>

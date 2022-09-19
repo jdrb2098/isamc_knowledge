@@ -38,7 +38,7 @@ function HomeScreen() {
         <div className="mx-5">
           <div>
             <div className="flex">
-              <i class="fa-brands fa-github fa-xl"></i>
+              <i className="fa-brands fa-github fa-xl"></i>
               <h3 className="mx-3" style={{ marginBottom: "0" }}>
                 Github:
               </h3>
@@ -47,7 +47,7 @@ function HomeScreen() {
           </div>
           <div>
             <div className="flex">
-              <i class="fa-brands fa-facebook fa-xl"></i>
+              <i className="fa-brands fa-facebook fa-xl"></i>
               <h3 className="mx-3" style={{ marginBottom: "0" }}>
                 Facebook:
               </h3>
@@ -56,7 +56,7 @@ function HomeScreen() {
           </div>
           <div>
             <div className="flex">
-              <i class="fa-brands fa-instagram fa-xl"></i>
+              <i className="fa-brands fa-instagram fa-xl"></i>
               <h3 className="mx-3" style={{ marginBottom: "0" }}>
                 Instagram:
               </h3>
@@ -100,7 +100,7 @@ function HomeScreen() {
           </p>
           <h3>2. keep it simple. Stupid!</h3>
           <p>
-            <code class="language-plaintext highlighter-rouge">KISS</code>, an
+            <code className="language-plaintext highlighter-rouge">KISS</code>, an
             acronym for “keep it simple, stupid”, is a design principle noted by
             the U.S. Navy in 1960. The KISS principle states that most systems
             work best if they are kept simple rather than made complicated;
@@ -123,7 +123,7 @@ function HomeScreen() {
           <p>
             We don’t care if you write a lot of lines of code, that’s not an
             indicator of hard work, we rather prefer a{" "}
-            <code class="language-plaintext highlighter-rouge">
+            <code className="language-plaintext highlighter-rouge">
               quality code
             </code>{" "}
             that resolves the problems while being concise.
