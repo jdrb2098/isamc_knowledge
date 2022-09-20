@@ -53,7 +53,7 @@ function Header() {
                 <span className="fa-xl">🧩</span>Techniques
                 </Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/posts">
+              <LinkContainer to="/posts/">
                 <Nav.Link>
                 <span className="fa-xl">📰</span>Posts
                 </Nav.Link>
