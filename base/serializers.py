@@ -57,7 +57,7 @@ class TagSerializer(serializers.ModelSerializer):
 
 class PostSerializer(serializers.ModelSerializer):
     reviews = serializers.SerializerMethodField(read_only=True)
-    Tags = serializers.SerializerMethodField(read_only=True)
+    
     class Meta:
         model = Post
         fields = "__all__"
@@ -65,9 +65,4 @@ class PostSerializer(serializers.ModelSerializer):
     def get_reviews(self, obj):
         reviews = obj.review_set.all()
         serializer = ReviewSerializer(reviews, many=True)
-        return serializer.data
-
-    def get_tags(self, obj):
-        tags = obj.tag_set.all()
-        serializer = TagSerializer(tags, many=True)
         return serializer.data

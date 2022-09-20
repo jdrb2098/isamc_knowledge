@@ -14,7 +14,6 @@ from base.serializers import PostSerializer
 from rest_framework import status
 
 @api_view(['GET'])
-@permission_classes([IsAuthenticated, IsLeadDeveloper])
 def getPosts(request):
     query = request.query_params.get('keyword')
     if query == None:

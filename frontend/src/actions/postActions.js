@@ -31,11 +31,13 @@ export const listPosts = (keyword = '') => async (dispatch) => {
         dispatch({ type: POST_LIST_REQUEST })
 
         const { data } = await axios.get(`/api/posts${keyword}`)
+        
 
         dispatch({
             type: POST_LIST_SUCCESS,
             payload: data
         })
+        console.log(data)
 
     } catch (error) {
         dispatch({

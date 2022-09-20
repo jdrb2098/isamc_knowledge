@@ -27,7 +27,8 @@ function App() {
           <Route path="techniques" element={<TechniquesScreen />} />
           <Route path="stack" element={<StackScreen />} />
           <Route path="posts" element={<PostListScreen />} />
-          <Route path="techniques" element={<PostScreen />} />
+          <Route path="post/:id" element={<PostScreen />} />
+          <Route path="techniques" element={<TechniquesScreen />} />
           <Route path="gitflow" element={<GitflowScreen />} />
           <Route path="getting_started" element={<GetingStartedScreen />} />
           <Route path="login" element={<LoginScreen />} />
