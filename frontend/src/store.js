@@ -13,7 +13,14 @@ import {
     userUpdateReducer,
 } from './reducers/userReducers'
 
-
+import { 
+    postListReducer,
+    postCreateReducer,
+    postDeleteReducer,
+    postDetailsReducer,
+    postUpdateReducer,
+    postReviewCreateReducer,
+} from './reducers/postRedusers'
 
 const reducer = combineReducers({
     userLogin: userLoginReducer,
@@ -23,6 +30,13 @@ const reducer = combineReducers({
     userList: userListReducer,
     userDelete: userDeleteReducer,
     userUpdate: userUpdateReducer,
+
+    postList: postListReducer,
+    postDetail: postDetailsReducer,
+    postCreate: postCreateReducer,
+    postDelete: postDeleteReducer,
+    postUpdate: postUpdateReducer,
+    postReviewCrete: postReviewCreateReducer,
 })
 
 
