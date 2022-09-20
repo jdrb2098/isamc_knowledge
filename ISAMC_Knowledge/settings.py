@@ -148,7 +148,13 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+AWS_QUERYSTRING_AUTH = False
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
+AWS_ACCESS_KEY_ID = 'AKIARYJWIA5VDTPIYIWK'
+AWS_SECRET_ACCESS_KEY = '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'
+
+AWS_STORAGE_BUCKET_NAME = 'isamc-knowledge'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
