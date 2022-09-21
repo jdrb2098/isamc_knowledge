@@ -36,7 +36,7 @@ function PostListScreen() {
         <div>
           {posts.map((post) => (
             <div key={post._id}>
-              <Link to={`/post/${post._id}`}>{post.title}</Link>
+              <Link to={`/posts/${post._id}`}>{post.title}</Link>
             </div>
           ))}
         

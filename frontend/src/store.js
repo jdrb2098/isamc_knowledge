@@ -36,7 +36,7 @@ const reducer = combineReducers({
     postCreate: postCreateReducer,
     postDelete: postDeleteReducer,
     postUpdate: postUpdateReducer,
-    postReviewCrete: postReviewCreateReducer,
+    postReviewCreate: postReviewCreateReducer,
 })
 
 
