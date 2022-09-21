@@ -12,6 +12,7 @@ import StackScreen from "./screens/StackScreen";
 import TechniquesScreen from "./screens/TechniquesScreen";
 import icon from "./assets/isamcFavicon.png";
 import { useEffect } from "react";
+import RegisterScreen from "./screens/RegisterScreen";
 
 function App() {
   useEffect(() => {
@@ -32,6 +33,7 @@ function App() {
           <Route path="gitflow" element={<GitflowScreen />} />
           <Route path="getting_started" element={<GetingStartedScreen />} />
           <Route path="login" element={<LoginScreen />} />
+          <Route path="register" element={<RegisterScreen/>} />
         </Routes>
       </Container>
       <Footer />
