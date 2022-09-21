@@ -4,14 +4,13 @@ import { POST_CREATE_REVIEW_RESET } from "../constants/postConstants";
 import { listPostDetails, createPostReview } from "../actions/postActions";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
-import { useLocation, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Button, Col, Form, ListGroup, Row } from "react-bootstrap";
-import parse from "html-react-parser";
+
 
 function PostScreen() {
   const [comment, setComment] = useState("");
-  const location = useLocation();
   const params = useParams();
 
   const dispatch = useDispatch();
