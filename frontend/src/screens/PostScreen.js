@@ -5,6 +5,7 @@ import { listPostDetails, createPostReview } from '../actions/postActions'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 import { useLocation, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function PostScreen() {
   const [comment, setComment] = useState('')
@@ -16,6 +17,7 @@ function PostScreen() {
 
 
   const postDetails = useSelector(state => state.postDetails)
+  const { loading, error, post } = postDetails
   
 
   const userLogin = useSelector(state => state.userLogin)
@@ -23,26 +25,38 @@ function PostScreen() {
   
 
   const postReviewCreate = useSelector(state => state.postReviewCreate)
-    const {
-        loading: loadingPostReview,
-        error: errorPostReview,
-        success: successPostReview,
-    } = postReviewCreate
-    useEffect(() => {
-      if (successPostReview) {
-          setComment('')
-          dispatch({ type: POST_CREATE_REVIEW_RESET })
-      }
+  const {
+      loading: loadingPostReview,
+      error: errorPostReview,
+      success: successPostReview,
+  } = postReviewCreate
+  useEffect(() => {
+    if (successPostReview) {
+        setComment('')
+        dispatch({ type: POST_CREATE_REVIEW_RESET })
+    }
 
-      dispatch(listPostDetails(params))
+    dispatch(listPostDetails(params.id))
 
-  }, [dispatch, params, successPostReview])
+}, [dispatch, params, successPostReview])
+
+const submitHandler = (e) => {
+  e.preventDefault()
+  dispatch(createPostReview(
+      params.id, {
+      comment
+  }
+  ))
+}
    
 
   
   return (
     <div className="px-5 pt-4" style={{ flex: 1, minHeight: "100vh" }}>
-      PostScreen
+      <Link to='/' className='btn btn-light my-3'>Go Back</Link>
+      {loading ? <Loader/>: error ? <Message variant="danger">{error}</Message>:(
+        <div></div>
+      )}
     </div>
   );
 }

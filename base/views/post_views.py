@@ -91,14 +91,14 @@ def createPostReview(request, pk):
     user = request.user
     post = Post.objects.get(_id=pk)
     data = request.data
-
+    print(data)
     # 1 - Review already exists
     alreadyExists = post.review_set.filter(user=user).exists()
     if alreadyExists:
         content = {'detail': 'Post already reviewed'}
         return Response(content, status=status.HTTP_400_BAD_REQUEST)
 
-    # 3 - Create review
+    # 2 - Create review
     else:
         review = Review.objects.create(
             user=user,
@@ -108,7 +108,6 @@ def createPostReview(request, pk):
         )
 
         reviews = post.review_set.all()
-        post.numReviews = len(reviews)
 
         post.save()
 
