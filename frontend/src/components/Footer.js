@@ -1,26 +1,29 @@
-import { Container } from "react-bootstrap";
-
+import { Col, Container, Row } from "react-bootstrap";
+import Logo from "../assets/LogoISAMC.jfif";
 const Footer = () => {
   return (
-    <footer className="my-4">
-      <hr className="hr-m" />
+    <footer className="py-5" style={{backgroundColor:""}}>
+      <hr/>
       <Container>
-        <h2 className="fs-4 mb-4">Isamc Knowledge Base</h2>
-        <div className="d-flex justify-content-between flex-md-col">
-          <ul style={{ listStyle: "none" }}>
-            <li style={{ color: "#828282" }}>Isamc Knowledge Base</li>
-            <li>
-              <a href="mailto:monica.ospina@isamc.com.co">
-                monica.ospina@isamc.com.co
-              </a>
-            </li>
-          </ul>
-          <div>
-            <i className="fa-brands fa-github me-2" />
-            <a href="https://github.com/">Isamc</a>
-          </div>
-          <span>Useful Knowledge Base for Isamc Developers</span>
-        </div>
+        <h3 className="pb-3" style={{textAlign: "center"}}> ISAMC Knowledge Base</h3>
+        
+        <Row style={{alignItems:"center"}}>
+          <Col xs='12' md="4" style={{alignSelf:"center"}}>
+            <Container className="flex justify-content-center">
+            <p ><span>ISAMC Knowledge Base </span> <br/>administrador@isamc.com.co</p>
+            
+            </Container>
+            
+          </Col>
+          <Col xs='12' md="4" style={{alignSelf:"center", textAlign:"center"}}>
+            <img src={Logo} alt="logo" style={{maxWidth:"50%", maxHeight:"100%"}} />
+          </Col>
+          <Col xs='12' md="4">
+            <div className="flex justify-content-center">
+            Useful Knowledge Base for ISAMC Developers
+            </div>
+          </Col>
+        </Row>
       </Container>
     </footer>
   );

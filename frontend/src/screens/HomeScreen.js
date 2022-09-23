@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Terminal from "../components/Terminal";
 
 function HomeScreen() {
+  const [innerWidth, setInnerWidth] = useState(window.innerWidth)
+  const [padding, setPadding] = useState("mx-5")
+  useEffect(() => {
+    if(innerWidth < 700){
+      setPadding("mx-1")
+    }
+    else{
+      setPadding("mx-5")   
+    }
+  
+  }, [innerWidth])
   return (
     <div className="px-5 pt-4" style={{ flex: 1, minHeight: "100vh" }}>
       <div className="flex">
@@ -34,7 +45,7 @@ function HomeScreen() {
         </div>
         <hr className="hr-m " />
 
-        <div className="mx-5">
+        <div className={`${padding}`}>
           <div>
             <div className="flex">
               <i className="fa-brands fa-github fa-xl"></i>
@@ -42,7 +53,9 @@ function HomeScreen() {
                 Github:
               </h3>
             </div>
-            <a href="asd">giasd</a>
+            <a href="https://github.com/Isamc22">
+              https://www.github.com/isamc.com
+            </a>
           </div>
           <div>
             <div className="flex">
@@ -51,7 +64,9 @@ function HomeScreen() {
                 Facebook:
               </h3>
             </div>
-            <a href="asd">giasd</a>
+            <a href="https://www.facebook.com/profile.php?id=100085939992582">
+              https://www.facebook.com/isamc.com
+            </a>
           </div>
           <div>
             <div className="flex">
@@ -60,7 +75,9 @@ function HomeScreen() {
                 Instagram:
               </h3>
             </div>
-            <a href="asd">giasd</a>
+            <a href="https://www.instagram.com/isamc.desarrollo/">
+              https://www.instagram.com/isamc.com
+            </a>
           </div>
         </div>
 
@@ -72,7 +89,7 @@ function HomeScreen() {
         </div>
 
         <hr className="hr-m" />
-        <div className="mx-5">
+        <div className={`${padding}`}>
           <h3>1. Don't Repeat Yourself</h3>
           <p>
             Don’t repeat yourself (
@@ -99,12 +116,12 @@ function HomeScreen() {
           </p>
           <h3>2. keep it simple. Stupid!</h3>
           <p>
-            <code className="language-plaintext highlighter-rouge">KISS</code>, an
-            acronym for “keep it simple, stupid”, is a design principle noted by
-            the U.S. Navy in 1960. The KISS principle states that most systems
-            work best if they are kept simple rather than made complicated;
-            therefore, simplicity should be a key goal in design, and
-            unnecessary complexity should be avoided.
+            <code className="language-plaintext highlighter-rouge">KISS</code>,
+            an acronym for “keep it simple, stupid”, is a design principle noted
+            by the U.S. Navy in 1960. The KISS principle states that most
+            systems work best if they are kept simple rather than made
+            complicated; therefore, simplicity should be a key goal in design,
+            and unnecessary complexity should be avoided.
           </p>
           <p>
             We always recommend you to look for the most simple and succinct way
@@ -131,6 +148,22 @@ function HomeScreen() {
         </div>
 
         <Terminal />
+        <blockquote className={`${padding}`}>
+          <p>
+            <strong>Note</strong> that a good code is self-documenting, in the
+            first method the comment was required because the name of the method
+            didn’t inform what it does, in the Good code the method itself
+            informs that it returns the factorial of a number, and it also
+            accomplishes the same in a single line of code.
+          </p>
+        </blockquote>
+        <blockquote className={`${padding}`}>
+          <p>
+            <strong>However</strong>, it doesn’t mean all the code should not be
+            documented, documentation is important and required in a lot of
+            cases.
+          </p>
+        </blockquote>
       </div>
     </div>
   );

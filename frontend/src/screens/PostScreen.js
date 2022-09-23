@@ -6,7 +6,7 @@ import Loader from "../components/Loader";
 import Message from "../components/Message";
 import {  useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Button, Col, Form, ListGroup, Row } from "react-bootstrap";
+import { Button, Col, Container, Form, ListGroup, Row } from "react-bootstrap";
 
 
 function PostScreen() {
@@ -54,7 +54,7 @@ function PostScreen() {
         <Message variant="danger">{error}</Message>
       ) : (
         <div>
-          <div dangerouslySetInnerHTML={{__html: post.body}}></div>
+          <Container className="Post__body " dangerouslySetInnerHTML={{__html: post.body}}></Container>
           <Row>
             <Col md={6}>
               <h4>Reviews</h4>
