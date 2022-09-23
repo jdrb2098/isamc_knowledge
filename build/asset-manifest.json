@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.51dd4f79.css",
+    "main.js": "/static/js/main.c5fb80cd.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/visualEstudioComunity.gif": "/static/media/visualEstudioComunity.eb2e7774a3f97a8838cd.gif",
+    "static/media/vs-code.png": "/static/media/vs-code.cba9b597188552583706.png",
+    "static/media/gitflow.svg": "/static/media/gitflow.a85898bc98f6e0ebca173cf09e93058c.svg",
+    "static/media/LogoISAMC.jfif": "/static/media/LogoISAMC.e1df531f03e7ba206afe.jfif",
+    "static/media/aws.svg": "/static/media/aws.fe6dc956ca59f1639378df7a4fce48f1.svg",
+    "static/media/react.svg": "/static/media/react.1acd0f78b83c9f4d61905701674e4d23.svg",
+    "static/media/microsoft-azure.svg": "/static/media/microsoft-azure.83fbfbaf6adfac335bbd80f76fa2e6eb.svg",
+    "static/media/dotnet.svg": "/static/media/dotnet.b9e5fe5189365786d4d8c9492e6c1142.svg",
+    "static/media/django.svg": "/static/media/django.5ea0b32c9fb4a9c4b9c941248c23eb55.svg",
+    "index.html": "/index.html",
+    "main.51dd4f79.css.map": "/static/css/main.51dd4f79.css.map",
+    "main.c5fb80cd.js.map": "/static/js/main.c5fb80cd.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51dd4f79.css",
+    "static/js/main.c5fb80cd.js"
+  ]
+}
