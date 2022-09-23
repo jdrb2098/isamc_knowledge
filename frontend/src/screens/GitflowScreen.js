@@ -4,20 +4,17 @@ import gitflow from "../assets/gitflow.svg";
 
 function GitflowScreen() {
   const [videoHeight, setVideoHeight] = useState("400px");
-  const [innerWidth, setInnerWidth] = useState(window.innerWidth);
-  const getWidth = () => {
-    setInnerWidth(`${window.innerWidth}`);
-  };
+
   useEffect(() => {
-    if (innerWidth > 1024) {
+    if (window.innerWidth > 1024) {
       setVideoHeight("500px");
     } else {
-      if (innerWidth < 500) setVideoHeight("300px");
+      if (window.innerWidth < 500) setVideoHeight("300px");
       else {
         setVideoHeight("400px");
       }
     }
-  }, [innerWidth]);
+  }, []);
 
   return (
     <div className="px-5 pt-4" style={{ flex: 1, minHeight: "100vh" }}>
@@ -187,13 +184,15 @@ function GitflowScreen() {
           immediately in production, then those branches usually branch off from{" "}
           <code class="language-plaintext highlighter-rouge">master</code>.
         </p>
+        <div>
         <ul>
           <li>
             <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">
-              https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+              <p style={{width: "100%",wordWrap: "break-word"}}>https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow</p>
             </a>
           </li>
         </ul>
+        </div>
         <h3 id="next">Next</h3>
         <hr />
         <ul>

@@ -126,11 +126,11 @@ WSGI_APPLICATION = 'ISAMC_Knowledge.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dbe3gqd053fn5e',
-        'USER': 'vmmuiivvqblkic',
-        'PASSWORD': "32eedcd1a2be734746b041861142e1e3387b8e4ee3b672d3c29c3d4ba4f69f61",
-        'HOST': "ec2-18-209-78-11.compute-1.amazonaws.com",
-        'PORT': '5432'
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': "hjI2yWW3n9GcBXB4azC4",
+        'HOST': "containers-us-west-74.railway.app",
+        'PORT': '6748'
     }
 }
 

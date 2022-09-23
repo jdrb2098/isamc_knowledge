@@ -17,7 +17,7 @@ function SearchBox() {
         }
     }
     return (
-        <Form onSubmit={submitHandler} inline="true">
+        <Form onSubmit={submitHandler} style={{display:"inline-flex"}}>
             <Form.Control
                 type='text'
                 name='q'
