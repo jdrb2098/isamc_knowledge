@@ -1,0 +1,1 @@
+web: gunicorn ISAMC_Knowledge.wsgi --log-file -
