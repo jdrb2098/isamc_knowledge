@@ -1,1 +1,2 @@
-web: gunicorn ISAMC_Knowledge.wsgi --log-file -
+web: gunicorn ISAMC_Knowledge.wsgi
+web: python manage.py migrate && gunicorn <project_name>.wsgi
