@@ -40,6 +40,13 @@ function PostListScreen() {
               <div>
                 Created:{" "}
                 <ReactTimeAgo date={post.created_at} locale="en-US" />
+                {post.updated_at ?
+                 <div>
+                  Updated at:
+                <ReactTimeAgo date={post.updated_at} locale="en-US" />
+                </div> :
+                <p></p> 
+                }
               </div>
               <Link to={`/posts/${post._id}`}>{post.title}</Link>
               <p>{post.description}</p>

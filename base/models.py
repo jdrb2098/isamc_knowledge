@@ -13,7 +13,7 @@ class Post(models.Model):
     title = models.CharField(max_length=50, null=True, blank=True)
     description = models.TextField(null=True, blank=True)    
     created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField()
+    updated_at = models.DateTimeField(auto_now=True)
     body = models.TextField(null=True, blank=True)
     tags = models.ManyToManyField('Tag', blank=True)
     _id = models.AutoField(primary_key=True, editable=False)
